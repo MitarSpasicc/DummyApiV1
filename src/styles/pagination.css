@@ -1,0 +1,72 @@
+.pagination-container {
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.pgn-btn {
+  border: none;
+  position: relative;
+  color: rgb(65, 65, 65);
+  cursor: pointer;
+  width: 12px;
+  background: none;
+  margin: 0 7px;
+}
+
+.pgn-btn i {
+  position: absolute;
+  top: -6px;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+}
+
+.pgn-btn:hover {
+  transform: scale(1.4);
+  transition: ease-in-out 0.3s all;
+}
+
+.pgn-btn:disabled {
+  color: rgb(209, 209, 209);
+  cursor: default;
+}
+
+.pag-number {
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  background-color: #00bcd4;
+  border-radius: 10px;
+  padding: 10px;
+  line-height: 10px;
+  margin: 0 5px;
+  box-shadow: 5px 4px 12px -4px rgb(0 0 0 / 40%);
+  transition: all ease 0.4s;
+}
+
+.pag-number:hover {
+  background-color: #5dcbda;
+}
+
+.pag-number.active {
+  background-color: #ffc107;
+}
+
+@media screen and (max-width: 768px) {
+  .pagination-container {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .pgn-btn:hover {
+    transform: scale(1);
+    transition: ease-in-out 0.3s all;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .pgn-btn {
+    margin: 0 2px;
+  }
+}
